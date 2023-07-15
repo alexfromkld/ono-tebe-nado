@@ -66,6 +66,17 @@
   background-size: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  opacity: .6;
+  background-color: #000;
+}
+
 .cover__title {
   position: relative;
   z-index: 1;
@@ -128,15 +139,4 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: inherit;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  opacity: .6;
-  background-color: #000;
 }
