@@ -55,58 +55,66 @@
 }
 
 .cover {
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   z-index: -1;
   width: 1440px;
   height: 757px;
   padding: 165px 50px 62px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cover__title {
   position: relative;
   z-index: 1;
-  color: #fff;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 30px;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 .aligned-text_center {
-  text-align: center;
   line-height: 1;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   line-height: 1;
+  text-align: right;
+}
+
+.aligned-last-letter__right {
+  letter-spacing: 0;
 }
 
 .cover__description {
   display: flex;
-  margin-top: 135px;
-  gap: 78px;
   justify-content: end;
   align-items: center;
+  gap: 78px;
+  margin-top: 135px;
+}
+
+.aligned-text__spacing {
+  letter-spacing: 60px;
 }
 
 .cover__description-text {
+  position: relative;
+  z-index: 1;
   color: #fff;
-  font-size: 22px;
   font-weight: 400;
+  font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
-  position: relative;
-  z-index: 1;
 }
 
 .bet-button {
@@ -116,19 +124,19 @@
   height: 52px;
   border: 1px solid #FFF;
   color: #fff;
-  font-size: 22px;
   font-weight: 400;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: inherit;
 }
 
 .overlay {
-  width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   z-index: 1;
-  background-color: #000;
+  width: 100%;
   opacity: .6;
+  background-color: #000;
 }
